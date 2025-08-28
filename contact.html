@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us!</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- contact.html -->
+    <header>
+      <nav class="logo">Olubukola Oloruntoba Foundation</nav>
+      <div class="nav-links">
+        <nav class="home"><a href="index.html">HOME</a></nav>
+        <nav class="about-us"><a href="about.html">ABOUT US</a></nav>
+        <nav class="contact-us"><a href="contact.html">CONTACT</a></nav>
+      </div>
+      <div class="hamburger">
+        &#9776;
+        <!-- this is the ☰ character -->
+      </div>
+      <div class="mobile-menu">
+        <a href="" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-user"></i> About</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      </div>
+      <!-- Overlay -->
+      <div class="nav-overlay"></div>
+    </header>
+    <section class="contact-hero">
+      <h1 class="fade-in">Contact Us</h1>
+      <p class="fade-in">
+        We’d love to hear from you! Reach out to us for inquiries or partnership
+        opportunities.
+      </p>
+    </section>
+
+    <section class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form fade-in">
+        <h2>Send a Message</h2>
+        <form id="contact-form">
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Contact Form Message!"
+          />
+          <input type="hidden" name="_template" value="box" />
+
+          <input type="text" name="name" placeholder="Your Name" required />
+          <span class="error" id="name-error"></span>
+          <input type="email" name="email" placeholder="Your Email" required />
+          <span class="error" id="email-error"></span>
+          <input type="tel" name="phone" placeholder="Your Phone" required />
+          <span class="error" id="phone-error"></span>
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <div class="spinner">
+            <button type="submit">Send Message</button>
+            <div id="loading" class="loading"></div>
+          </div>
+        </form>
+      </div>
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span id="popup-close">&times;</span>
+          <div id="popup-icon"></div>
+          <p id="popup-message"></p>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info fade-in">
+        <h2>Our Contact Details</h2>
+        <p><strong>Email:</strong> info@yourfoundation.com</p>
+        <p><strong>Phone:</strong> +234 803 377 5381</p>
+        <p>
+          <strong>WhatsApp:</strong>
+          <a href="https://wa.me/2348033775381" target="_blank">Chat with us</a>
+        </p>
+        <p>
+          <strong>Office:</strong> Suite 235 block D, HFP Plaza, Abraham
+          Adesanya, Ajah
+        </p>
+        <div class="map-container" id="ap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.405879015228!2d3.581657577332142!3d6.470160407101701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf9fc75fe0f05%3A0x502d1606ef3fdeed!2sHFP%20Eastline%20Shopping%20Complex!5e0!3m2!1sen!2sng!4v1755682323979!5m2!1sen!2sng"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <a
+        href="https://wa.me/2348033775381?text=Hello%20I%20am%20interested%20in%20joining%20your%20real%20estate%20team"
+        target="_blank"
+        class="whatsapp-btn"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3>Olubukola Oloruntoba Realtors</h3>
+          <p>Empowering women through real estate marketing in Nigeria.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#applyForm">Apply Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <h4>Connect With Us</h4>
+          <div>
+            <a href="https://wa.me/2348033775381" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-copy">
+        &copy; 2025 Olubukola Oloruntoba Realtors. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
+
+<!-- 
+Map (optional) – Google Maps embed if your client wants physical office location shown. -->
