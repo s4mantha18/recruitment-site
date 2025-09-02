@@ -1297,3 +1297,7 @@ a {
 #popup-icon.error {
   color: red;
 }
+
+html {
+  scroll-behavior: smooth;
+}
